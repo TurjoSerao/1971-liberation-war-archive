@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+  .nav.active {
+    display: block;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 40px;
+    color: var(--primary);
+    cursor: pointer;
+    order: 2;
+  }
+  .menu-toggle:active {
+    display: flex;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 0;
+    padding: 16px 0;
+    background: #fff;
+  }
+  .nav-menu li {
+    width: 100%;
+  }
+  .nav-menu a {
+    display: block;
+    padding: 12px 16px;
+    width: 100%;
+  }
+}
