@@ -27,12 +27,17 @@ h5 {
 
 /* Header Section */
 .navbar {
-  width: min(100%, 1200px);
+  width: min(100%, 1400px);
   margin: 0 auto;
   padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .logo {
@@ -45,15 +50,30 @@ h5 {
   gap: 20px;
   list-style: none;
 }
-.nav-menu a{
+.nav-menu a {
   text-decoration: none;
   color: var(--heading);
 }
 
 .menu-toggle {
-    display: none;
+  display: none;
 }
 
+/* hero section */
+.hero {
+  position: relative;
+  background-image: url(/assets/images/hero-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.hero-container {
+  width: min(100%, 1400px);
+  height: 100vh;
+  margin: 0 auto;
+  padding: 5px;
+
+}
 
 /*  */
-
