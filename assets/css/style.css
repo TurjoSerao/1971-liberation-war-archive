@@ -123,7 +123,7 @@ h3 {
 }
 
 .hero-container h1 {
-  max-width: 600px;
+  max-width: 700px;
   font-size: 52px;
 }
 
@@ -183,6 +183,73 @@ h1 {
 .primary-btn:hover{
   background-color: var(--accent);
 }
+
+/* timeline section */
+.timeline-section {
+  background-color: white;
+  padding: 100px 20px;
+}
+.timeline-container {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+.timeline-nav {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.timeline-btn {
+  border: none;
+  background: #ffffff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.timeline-btn.active {
+  background: var(--primary);
+  color: white;
+}
+
+.timeline-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.timeline-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+.timeline-info span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.timeline-info h3 {
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.timeline-info p {
+  line-height: 1.8;
+}
+
+
 
 /* MOBILE SIDEBAR */
 @media (max-width: 768px) {
@@ -247,5 +314,13 @@ h1 {
   }
   .liberation-image img {
     width: 100%;
+  }
+  /* timeline section */
+  .timeline-content {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-info h3 {
+    font-size: 1.5rem;
   }
 }
