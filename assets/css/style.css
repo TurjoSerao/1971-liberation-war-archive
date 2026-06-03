@@ -65,7 +65,7 @@ h3 {
 
 .nav-menu a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--bg);
   font-weight: 500;
   transition: 0.2s;
 }
@@ -118,6 +118,8 @@ h3 {
   text-align: left;
   width: min(100%, 1200px);
   padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .hero-container h1 {
@@ -128,6 +130,58 @@ h3 {
 .hero-container p {
   margin-top: 15px;
   font-size: 18px;
+}
+
+/* liberation war */
+.liberation {
+  width: min(100%, 1200px);
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.liberation-container {
+  height: 600px;
+}
+
+.liberation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.liberation-content h2,
+li,
+h1 {
+  margin: 20px 0;
+}
+
+.liberation-image {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.liberation-image img {
+  width: 300px;
+  height: 300px;
+  transition: 0.5s;
+}
+
+.liberation-image img:hover {
+  transform: scale(1.1);
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: var(--bg);
+  padding: 12px 22px;
+  border-radius: 5px;
+  border: none;
+}
+
+.primary-btn:hover{
+  background-color: var(--accent);
 }
 
 /* MOBILE SIDEBAR */
@@ -155,7 +209,7 @@ h3 {
 
     padding: 80px 20px;
 
-    background: #f8f5f0; 
+    background: #f8f5f0;
 
     box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
 
@@ -175,5 +229,23 @@ h3 {
 
   .hero-container h1 {
     font-size: 32px;
+  }
+
+  /* liberation Section */
+  .liberation {
+    width: 100%;
+    padding: 10px;
+  }
+  .liberation-container {
+    height: auto;
+  }
+  .liberation-content {
+    flex-direction: column;
+  }
+  .liberation-image {
+    grid-template-columns: auto;
+  }
+  .liberation-image img {
+    width: 100%;
   }
 }
