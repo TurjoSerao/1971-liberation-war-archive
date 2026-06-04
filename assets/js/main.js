@@ -110,10 +110,48 @@ filterButtons.forEach((button) => {
 
     galleryItems.forEach((item) => {
       if (filter === "all" || item.classList.contains(filter)) {
-        item.style.display = "block";
+        item.style.display = "";
       } else {
         item.style.display = "none";
       }
     });
   });
+});
+
+// lightbox
+const lightbox = document.querySelector(".lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const lightboxVideo = document.getElementById("lightbox-video");
+
+// Images
+document
+  .querySelectorAll(".gallery-item.photo img, .gallery-item.document img")
+  .forEach((img) => {
+    img.addEventListener("click", () => {
+      lightbox.classList.add("active");
+
+      lightboxVideo.style.display = "none";
+      lightboxImage.style.display = "block";
+
+      lightboxImage.src = img.src;
+    });
+  });
+
+// Video
+document.querySelectorAll(".gallery-item.video").forEach((video) => {
+  video.addEventListener("click", () => {
+    lightbox.classList.add("active");
+
+    lightboxImage.style.display = "none";
+    lightboxVideo.style.display = "block";
+
+    lightboxVideo.src = "https://www.youtube.com/embed/VIDEO_ID?autoplay=1";
+  });
+});
+
+// Close
+document.querySelector(".close-lightbox").addEventListener("click", () => {
+  lightbox.classList.remove("active");
+
+  lightboxVideo.src = "";
 });
