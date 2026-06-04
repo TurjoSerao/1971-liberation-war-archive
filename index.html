@@ -126,7 +126,8 @@
     <section class="timeline-section">
       <div class="timeline-container">
         <div class="section-header">
-          <h1>03 / Timeline of 1971</h1>
+          <h4>03 / Timeline</h4>
+          <h1>Timeline of 1971</h1>
           <p>Explore the key events that shaped Bangladesh's Liberation War.</p>
         </div>
 
@@ -166,6 +167,83 @@
         </div>
       </div>
     </section>
+    <!-- gallery sections  -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Photo Gallery</h2>
+          <p>
+            Explore photographs, historical documents, and videos from the
+            Liberation War of 1971.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+
+          <button class="filter-btn" data-filter="photo">Photographs</button>
+
+          <button class="filter-btn" data-filter="document">Documents</button>
+
+          <button class="filter-btn" data-filter="video">Videos</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Photo -->
+          <div class="gallery-item photo">
+            <img
+              src="assets/images/gallery/photo-1.jpg"
+              alt="Historic photograph"
+            />
+          </div>
+
+          <div class="gallery-item photo">
+            <img src="assets/images/gallery/photo-2.jpg" alt="Liberation war" />
+          </div>
+
+          <!-- Document -->
+          <div class="gallery-item document">
+            <img
+              src="assets/images/gallery/document-1.jpg"
+              alt="Declaration document"
+            />
+          </div>
+
+          <!-- Video Thumbnail -->
+          <div class="gallery-item video">
+            <img
+              src="assets/images/gallery/video-thumb.jpg"
+              alt="Interview video"
+            />
+
+            <div class="play-icon">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+
+          <div class="gallery-item photo">
+            <img
+              src="assets/images/gallery/photo-3.jpg"
+              alt="Freedom fighters"
+            />
+          </div>
+
+          <div class="gallery-item document">
+            <img
+              src="assets/images/gallery/document-2.jpg"
+              alt="Historical document"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- lightbox image gallery -->
+    <div class="lightbox">
+      <span class="close-lightbox">&times;</span>
+      <img src="" id="lightbox-image" alt="" />
+    </div>
     <!-- JS -->
     <script src="assets/js/main.js"></script>
   </body>
