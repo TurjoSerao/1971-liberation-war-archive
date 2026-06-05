@@ -431,6 +431,15 @@ h1 {
     display: block;
     text-align: right;
   }
+  .nav-menu a {
+    color: var(--text);
+  }
+  .nav-menu li {
+    background-color: var(--primary);
+    margin: 5px 0;
+    padding: 10px;
+    
+  }
 
   .nav-menu {
     position: fixed;
